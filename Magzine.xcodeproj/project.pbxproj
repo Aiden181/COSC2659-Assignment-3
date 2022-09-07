@@ -16,6 +16,11 @@
 		765BB9E328C6FCD3003434C3 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 765BB9DE28C6FC8E003434C3 /* Poppins-SemiBold.ttf */; };
 		765BB9E628C6FF9E003434C3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9E528C6FF9E003434C3 /* CardView.swift */; };
 		765BB9E828C71115003434C3 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9E728C71115003434C3 /* FontManager.swift */; };
+		765BB9EA28C8DD36003434C3 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9E928C8DD36003434C3 /* Modifier.swift */; };
+		765BB9EC28C8E88E003434C3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9EB28C8E88E003434C3 /* ListView.swift */; };
+		765BB9F028C8FED1003434C3 /* ListCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */; };
+		765BB9F828C90B21003434C3 /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9F728C90B21003434C3 /* CategoryButton.swift */; };
+		765BB9FA28C90DA2003434C3 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9F928C90DA2003434C3 /* Function.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		765BB9E428C6FD92003434C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		765BB9E528C6FF9E003434C3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		765BB9E728C71115003434C3 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		765BB9E928C8DD36003434C3 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		765BB9EB28C8E88E003434C3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoryView.swift; sourceTree = "<group>"; };
+		765BB9F728C90B21003434C3 /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		765BB9F928C90DA2003434C3 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +74,8 @@
 			children = (
 				765BB9E428C6FD92003434C3 /* Info.plist */,
 				765BB9DD28C6FAD8003434C3 /* Fonts */,
-				765BB9DC28C6F895003434C3 /* Helper */,
 				765BB9DB28C6F890003434C3 /* Model */,
+				765BB9DC28C6F895003434C3 /* Helper */,
 				765BB9DA28C6F888003434C3 /* View */,
 				765BB9CC28C6F85D003434C3 /* MagzineApp.swift */,
 				765BB9CE28C6F85D003434C3 /* ContentView.swift */,
@@ -87,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				765BB9E528C6FF9E003434C3 /* CardView.swift */,
+				765BB9EB28C8E88E003434C3 /* ListView.swift */,
+				765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */,
+				765BB9F728C90B21003434C3 /* CategoryButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +107,7 @@
 		765BB9DB28C6F890003434C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				765BB9F928C90DA2003434C3 /* Function.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +115,7 @@
 		765BB9DC28C6F895003434C3 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				765BB9E928C8DD36003434C3 /* Modifier.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -189,10 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765BB9FA28C90DA2003434C3 /* Function.swift in Sources */,
+				765BB9F828C90B21003434C3 /* CategoryButton.swift in Sources */,
 				765BB9CF28C6F85D003434C3 /* ContentView.swift in Sources */,
 				765BB9E628C6FF9E003434C3 /* CardView.swift in Sources */,
+				765BB9EC28C8E88E003434C3 /* ListView.swift in Sources */,
 				765BB9E828C71115003434C3 /* FontManager.swift in Sources */,
 				765BB9CD28C6F85D003434C3 /* MagzineApp.swift in Sources */,
+				765BB9F028C8FED1003434C3 /* ListCategoryView.swift in Sources */,
+				765BB9EA28C8DD36003434C3 /* Modifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
