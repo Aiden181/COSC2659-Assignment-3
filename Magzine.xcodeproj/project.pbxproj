@@ -17,10 +17,12 @@
 		765BB9E628C6FF9E003434C3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9E528C6FF9E003434C3 /* CardView.swift */; };
 		765BB9E828C71115003434C3 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9E728C71115003434C3 /* FontManager.swift */; };
 		765BB9EA28C8DD36003434C3 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9E928C8DD36003434C3 /* Modifier.swift */; };
-		765BB9EC28C8E88E003434C3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9EB28C8E88E003434C3 /* ListView.swift */; };
 		765BB9F028C8FED1003434C3 /* ListCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */; };
 		765BB9F828C90B21003434C3 /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9F728C90B21003434C3 /* CategoryButton.swift */; };
-		765BB9FA28C90DA2003434C3 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9F928C90DA2003434C3 /* Function.swift */; };
+		765BB9FE28C9BF45003434C3 /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9FD28C9BF45003434C3 /* ListCardView.swift */; };
+		765BBA0028C9CF3E003434C3 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9FF28C9CF3E003434C3 /* ArticleView.swift */; };
+		765BBA0228C9D369003434C3 /* BottomNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BBA0128C9D369003434C3 /* BottomNavbar.swift */; };
+		765BBA0428C9DA48003434C3 /* TopNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BBA0328C9DA48003434C3 /* TopNavbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +38,12 @@
 		765BB9E528C6FF9E003434C3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		765BB9E728C71115003434C3 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		765BB9E928C8DD36003434C3 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
-		765BB9EB28C8E88E003434C3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoryView.swift; sourceTree = "<group>"; };
 		765BB9F728C90B21003434C3 /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
-		765BB9F928C90DA2003434C3 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		765BB9FD28C9BF45003434C3 /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
+		765BB9FF28C9CF3E003434C3 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		765BBA0128C9D369003434C3 /* BottomNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavbar.swift; sourceTree = "<group>"; };
+		765BBA0328C9DA48003434C3 /* TopNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				765BB9E528C6FF9E003434C3 /* CardView.swift */,
-				765BB9EB28C8E88E003434C3 /* ListView.swift */,
 				765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */,
 				765BB9F728C90B21003434C3 /* CategoryButton.swift */,
+				765BB9FD28C9BF45003434C3 /* ListCardView.swift */,
+				765BB9FF28C9CF3E003434C3 /* ArticleView.swift */,
+				765BBA0128C9D369003434C3 /* BottomNavbar.swift */,
+				765BBA0328C9DA48003434C3 /* TopNavbar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,7 +114,6 @@
 		765BB9DB28C6F890003434C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				765BB9F928C90DA2003434C3 /* Function.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,15 +210,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765BB9FA28C90DA2003434C3 /* Function.swift in Sources */,
+				765BB9FE28C9BF45003434C3 /* ListCardView.swift in Sources */,
+				765BBA0428C9DA48003434C3 /* TopNavbar.swift in Sources */,
+				765BBA0228C9D369003434C3 /* BottomNavbar.swift in Sources */,
 				765BB9F828C90B21003434C3 /* CategoryButton.swift in Sources */,
 				765BB9CF28C6F85D003434C3 /* ContentView.swift in Sources */,
 				765BB9E628C6FF9E003434C3 /* CardView.swift in Sources */,
-				765BB9EC28C8E88E003434C3 /* ListView.swift in Sources */,
 				765BB9E828C71115003434C3 /* FontManager.swift in Sources */,
 				765BB9CD28C6F85D003434C3 /* MagzineApp.swift in Sources */,
 				765BB9F028C8FED1003434C3 /* ListCategoryView.swift in Sources */,
 				765BB9EA28C8DD36003434C3 /* Modifier.swift in Sources */,
+				765BBA0028C9CF3E003434C3 /* ArticleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct CategoryButton: View {
+    @State private var isActive: Bool = true
+    
+    //MARK: Toggle Function
     var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: 40)
-                .modifier(CategoryBTN())
-                .foregroundColor(Color("LightGrey"))
-            Text("World")
-                .modifier(CategoryText())
-                .foregroundColor(Color("Grey"))
+        Button {
+            //
+        } label: {
+            ZStack{
+                RoundedRectangle(cornerRadius: 40)
+                    .modifier(CategoryBTN())
+                    .foregroundColor(Color("LightGrey"))
+                Text("World")
+                    .modifier(CategoryText())
+                    .foregroundColor(Color("Grey"))
+            }
         }
+
     }
 }
 

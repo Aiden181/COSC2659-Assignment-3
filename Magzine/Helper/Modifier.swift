@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 //MARK: - Article Text Style
-struct ArticleText: ViewModifier{
+struct CardTitleText: ViewModifier{
     func body(content: Content) -> some View {
         content.font(.custom(FontManager.Poppins.semibold, size: 14))
             .foregroundColor(Color("Black"))
@@ -27,7 +27,7 @@ struct ArticleImage: ViewModifier{
 
     
 //MARK: - Author Text Style
-struct AuthorText: ViewModifier{
+struct CardAuthorText: ViewModifier{
     func body(content: Content) -> some View {
         content.font(.custom(FontManager.Poppins.regular, size: 13))
             .foregroundColor(Color("Grey"))
@@ -35,7 +35,7 @@ struct AuthorText: ViewModifier{
 }
 
 //MARK: - Categories Text Style
-struct ArticleCategoryText: ViewModifier{
+struct CardCategoryText: ViewModifier{
     func body(content: Content) -> some View {
         content.font(.custom(FontManager.Poppins.semibold, size: 13))
             .foregroundColor(Color("Blue"))
@@ -46,14 +46,6 @@ struct ArticleCategoryText: ViewModifier{
 struct TimeDot: ViewModifier{
     func body(content: Content) -> some View {
         content.frame(width: 7, height: 7)
-            .foregroundColor(Color("Grey"))
-    }
-}
-
-//MARK: - Time Text Style
-struct TimeText: ViewModifier{
-    func body(content: Content) -> some View {
-        content.font(.custom(FontManager.Poppins.regular, size: 13))
             .foregroundColor(Color("Grey"))
     }
 }
@@ -72,3 +64,35 @@ struct CategoryBTN: ViewModifier{
     }
 }
 
+//MARK: - Categories List Button Style
+struct NavbarIcon: ViewModifier{
+    func body(content: Content) -> some View {
+        content.frame(width: 24, height: 24)
+    }
+}
+
+//MARK: - Article Title Style
+struct ArticleTitleStyle: ViewModifier{
+    func body(content: Content) -> some View {
+        content.font(.custom(FontManager.Poppins.semibold, size: 18))
+    }
+}
+
+//MARK: - Article Content Style
+struct ArticleContentStyle: ViewModifier{
+    func body(content: Content) -> some View {
+        content.font(.custom(FontManager.Poppins.regular, size: 15))
+            .padding(.bottom, 20)
+    }
+}
+
+
+//MARK: - Author Avatar Image Style
+struct AuthorAvatar: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .scaledToFit()
+            .frame(width: 53, height: 53)
+            .clipShape(Circle())
+    }
+}

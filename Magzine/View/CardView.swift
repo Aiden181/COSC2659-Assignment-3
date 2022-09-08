@@ -10,22 +10,22 @@ import SwiftUI
 struct CardView: View {
     var body: some View {
         HStack(alignment: .top){
-            Image("image")
+            Image("thumbnail")
                 .resizable()
                 .modifier(ArticleImage())
             VStack(alignment: .leading, spacing: 15){
-                Text("Monarch population soars 4,900 percent since last year in thrilling 2021 western migration").modifier(ArticleText())
+                Text("Monarch population soars 4,900 percent since last year in thrilling 2021 western migration").modifier(CardTitleText())
                 Text("By Andy Corbley")
-                    .modifier(AuthorText())
+                    .modifier(CardAuthorText())
                 HStack{
                     HStack(spacing: 15){
                         Text("World")
-                            .modifier(ArticleCategoryText())
+                            .modifier(CardCategoryText())
                         Image(systemName: "circle.fill")
                             .resizable()
                             .modifier(TimeDot())
                         Text("1m ago")
-                            .modifier(TimeText())
+                            .modifier(CardAuthorText())
                     }
                     Spacer()
                     Image(systemName: "ellipsis")
@@ -34,6 +34,7 @@ struct CardView: View {
         } //HStack #1
         .padding(.bottom, 30)
         .padding(.top, 20)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
