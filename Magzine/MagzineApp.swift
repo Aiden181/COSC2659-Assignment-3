@@ -11,7 +11,7 @@ import SwiftUI
 struct MagzineApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListCardView()
         }
     }
 }

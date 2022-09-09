@@ -10,11 +10,25 @@ import SwiftUI
 struct TopNavbar: View {
     var body: some View {
         HStack{
-            Image(systemName: "chevron.left")
+            Button{
+                //
+            } label: {
+                Image(systemName: "chevron.left")
+            }
+            
             Spacer()
+            
             HStack(spacing: 22){
-                Image(systemName: "bookmark")
-                Image(systemName: "square.and.arrow.up")
+                Button{
+                    //
+                } label: {
+                    Image(systemName: "bookmark")
+                }
+                Button{
+                    //
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                }
             }
         }
         .padding(.horizontal, 16)

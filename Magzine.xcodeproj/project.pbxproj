@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3639DE9128CB2F6200B09327 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639DE9028CB2F6200B09327 /* NewsModel.swift */; };
 		765BB9CD28C6F85D003434C3 /* MagzineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9CC28C6F85D003434C3 /* MagzineApp.swift */; };
 		765BB9CF28C6F85D003434C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9CE28C6F85D003434C3 /* ContentView.swift */; };
 		765BB9D128C6F85F003434C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765BB9D028C6F85F003434C3 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3639DE9028CB2F6200B09327 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		765BB9C928C6F85D003434C3 /* Magzine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magzine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765BB9CC28C6F85D003434C3 /* MagzineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagzineApp.swift; sourceTree = "<group>"; };
 		765BB9CE28C6F85D003434C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		765BB9E928C8DD36003434C3 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 		765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCategoryView.swift; sourceTree = "<group>"; };
 		765BB9F728C90B21003434C3 /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
-		765BB9FD28C9BF45003434C3 /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
+		765BB9FD28C9BF45003434C3 /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		765BB9FF28C9CF3E003434C3 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		765BBA0128C9D369003434C3 /* BottomNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavbar.swift; sourceTree = "<group>"; };
 		765BBA0328C9DA48003434C3 /* TopNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavbar.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3639DE8F28CB2F3300B09327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3639DE9028CB2F6200B09327 /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		765BB9C028C6F85D003434C3 = {
 			isa = PBXGroup;
 			children = (
@@ -76,9 +86,9 @@
 		765BB9CB28C6F85D003434C3 /* Magzine */ = {
 			isa = PBXGroup;
 			children = (
+				3639DE8F28CB2F3300B09327 /* Model */,
 				765BB9E428C6FD92003434C3 /* Info.plist */,
 				765BB9DD28C6FAD8003434C3 /* Fonts */,
-				765BB9DB28C6F890003434C3 /* Model */,
 				765BB9DC28C6F895003434C3 /* Helper */,
 				765BB9DA28C6F888003434C3 /* View */,
 				765BB9CC28C6F85D003434C3 /* MagzineApp.swift */,
@@ -109,13 +119,6 @@
 				765BBA0328C9DA48003434C3 /* TopNavbar.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		765BB9DB28C6F890003434C3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		765BB9DC28C6F895003434C3 /* Helper */ = {
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3639DE9128CB2F6200B09327 /* NewsModel.swift in Sources */,
 				765BB9FE28C9BF45003434C3 /* ListCardView.swift in Sources */,
 				765BBA0428C9DA48003434C3 /* TopNavbar.swift in Sources */,
 				765BBA0228C9D369003434C3 /* BottomNavbar.swift in Sources */,
