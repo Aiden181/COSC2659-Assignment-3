@@ -12,38 +12,40 @@ struct TopNavbar: View {
     
 
     var body: some View {
-        HStack{
-            Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-                //
-                
-                
-            }) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.black)
-            }
-            .navigationBarHidden(true)
-            
-            Spacer()
-            
-            HStack(spacing: 22){
-                Button{
+        ZStack {
+            HStack{
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
                     //
-                } label: {
-                    Image(systemName: "bookmark")
+                    
+                    
+                }) {
+                    Image(systemName: "chevron.left")
                         .foregroundColor(.black)
-
                 }
-                Button{
-                    //
-                } label: {
-                    Image(systemName: "square.and.arrow.up")
-                        .foregroundColor(.black)
+                .navigationBarHidden(true)
+                
+                Spacer()
+                
+                HStack(spacing: 22){
+                    Button{
+                        //
+                    } label: {
+                        Image(systemName: "bookmark")
+                            .foregroundColor(.black)
 
+                    }
+                    Button{
+                        //
+                    } label: {
+                        Image(systemName: "square.and.arrow.up")
+                            .foregroundColor(.black)
+
+                    }
                 }
             }
+            .padding(.horizontal, 16)
         }
-        .padding(.horizontal, 16)
     }
 }
 

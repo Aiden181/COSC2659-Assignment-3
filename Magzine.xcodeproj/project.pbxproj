@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3639DE9128CB2F6200B09327 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639DE9028CB2F6200B09327 /* NewsModel.swift */; };
+		7633411A28CCDB0500E6E50B /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633411928CCDB0500E6E50B /* BookmarkView.swift */; };
+		7633411C28CCDB1B00E6E50B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633411B28CCDB1B00E6E50B /* SearchView.swift */; };
+		7633411E28CCDB2300E6E50B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633411D28CCDB2300E6E50B /* SettingView.swift */; };
 		765BB9CD28C6F85D003434C3 /* MagzineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9CC28C6F85D003434C3 /* MagzineApp.swift */; };
 		765BB9CF28C6F85D003434C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9CE28C6F85D003434C3 /* ContentView.swift */; };
 		765BB9D128C6F85F003434C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765BB9D028C6F85F003434C3 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		3639DE9028CB2F6200B09327 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		7633411928CCDB0500E6E50B /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		7633411B28CCDB1B00E6E50B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7633411D28CCDB2300E6E50B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		765BB9C928C6F85D003434C3 /* Magzine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magzine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765BB9CC28C6F85D003434C3 /* MagzineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagzineApp.swift; sourceTree = "<group>"; };
 		765BB9CE28C6F85D003434C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 				765BB9FF28C9CF3E003434C3 /* ArticleView.swift */,
 				765BBA0128C9D369003434C3 /* BottomNavbar.swift */,
 				765BBA0328C9DA48003434C3 /* TopNavbar.swift */,
+				7633411928CCDB0500E6E50B /* BookmarkView.swift */,
+				7633411B28CCDB1B00E6E50B /* SearchView.swift */,
+				7633411D28CCDB2300E6E50B /* SettingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,9 +227,12 @@
 				765BBA0428C9DA48003434C3 /* TopNavbar.swift in Sources */,
 				765BBA0228C9D369003434C3 /* BottomNavbar.swift in Sources */,
 				765BB9F828C90B21003434C3 /* CategoryButton.swift in Sources */,
+				7633411E28CCDB2300E6E50B /* SettingView.swift in Sources */,
 				765BB9CF28C6F85D003434C3 /* ContentView.swift in Sources */,
 				765BB9E628C6FF9E003434C3 /* CardView.swift in Sources */,
+				7633411A28CCDB0500E6E50B /* BookmarkView.swift in Sources */,
 				765BB9E828C71115003434C3 /* FontManager.swift in Sources */,
+				7633411C28CCDB1B00E6E50B /* SearchView.swift in Sources */,
 				765BB9CD28C6F85D003434C3 /* MagzineApp.swift in Sources */,
 				765BB9F028C8FED1003434C3 /* ListCategoryView.swift in Sources */,
 				765BB9EA28C8DD36003434C3 /* Modifier.swift in Sources */,

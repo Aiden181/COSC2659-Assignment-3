@@ -48,6 +48,7 @@ struct BottomNavbar: View {
 
 
         }
+        .padding(.top, 17)
     }
 }
 

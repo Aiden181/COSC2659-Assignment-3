@@ -9,31 +9,32 @@ import SwiftUI
 
 struct ListCardView: View {
     var body: some View {
+        ZStack {
+        Color("White")
             VStack{
                 ListCategoryView()
-
-                NavigationView{
-                    
-                    List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                        NavigationLink{
-                            ArticleView()
-                        } label: {
-                            CardView()
-                                .frame( maxWidth: .infinity)
+                    NavigationView{
+                        List(0..<10) { item in
+                            NavigationLink{
+                                ArticleView()
+                            } label: {
+                                CardView()
+                                    .frame( maxWidth: .infinity)
+                            }
                         }
+                        .onAppear(perform: {
+                                UITableView.appearance().contentInset.top = -35
+                            })
+                        .offset(y: 110)
+                        .edgesIgnoringSafeArea(.top)
+                        .listStyle(GroupedListStyle())
+                        .edgesIgnoringSafeArea(.bottom)
+                        .navigationBarHidden(true)
                     }
-                    .edgesIgnoringSafeArea(.top)
-                    .listStyle(GroupedListStyle())
-                    .edgesIgnoringSafeArea(.bottom)
-                    .navigationBarHidden(true)
-
-
-
-                }
-                BottomNavbar()
-
-
+                
+                    BottomNavbar()
             }
+        }//VStack
 
             
         
