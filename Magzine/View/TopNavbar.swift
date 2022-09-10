@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct TopNavbar: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+
     var body: some View {
         HStack{
-            Button{
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
                 //
-            } label: {
+                
+                
+            }) {
                 Image(systemName: "chevron.left")
+                    .foregroundColor(.black)
             }
+            .navigationBarHidden(true)
             
             Spacer()
             
@@ -23,11 +31,15 @@ struct TopNavbar: View {
                     //
                 } label: {
                     Image(systemName: "bookmark")
+                        .foregroundColor(.black)
+
                 }
                 Button{
                     //
                 } label: {
                     Image(systemName: "square.and.arrow.up")
+                        .foregroundColor(.black)
+
                 }
             }
         }

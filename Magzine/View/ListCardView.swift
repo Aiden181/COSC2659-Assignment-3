@@ -9,26 +9,36 @@ import SwiftUI
 
 struct ListCardView: View {
     var body: some View {
-        
-        VStack{
-            ListCategoryView()
-            NavigationView{
-                
-                List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                    NavigationLink{
-                        ArticleView()
-                    } label: {
-                        CardView()
-                            .frame( maxWidth: .infinity)
+            VStack{
+                ListCategoryView()
+
+                NavigationView{
+                    
+                    List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                        NavigationLink{
+                            ArticleView()
+                        } label: {
+                            CardView()
+                                .frame( maxWidth: .infinity)
+                        }
                     }
+                    .edgesIgnoringSafeArea(.top)
+                    .listStyle(GroupedListStyle())
+                    .edgesIgnoringSafeArea(.bottom)
+                    .navigationBarHidden(true)
+
+
+
                 }
-                .edgesIgnoringSafeArea(.top)
-                .listStyle(GroupedListStyle())
+                BottomNavbar()
+
 
             }
-            
 
-        }
+            
+        
+        
+        
      
             
         }

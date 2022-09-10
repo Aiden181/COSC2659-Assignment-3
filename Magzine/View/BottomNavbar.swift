@@ -10,16 +10,43 @@ import SwiftUI
 struct BottomNavbar: View {
     var body: some View {
         HStack(spacing: 77){
-            Image(systemName: "house")
-                .modifier(NavbarIcon())
-            Image(systemName: "magnifyingglass")
-                .modifier(NavbarIcon())
-            Image(systemName: "bookmark")
-                .modifier(NavbarIcon())
-            Image("settings")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 20, height: 20)
+            Button{
+                //
+            } label: {
+                Image(systemName: "house")
+                    .modifier(NavbarIcon())
+                    .foregroundColor(.black)
+            }
+            
+            Button{
+                //
+            } label: {
+                Image(systemName: "magnifyingglass")
+                    .modifier(NavbarIcon())
+                    .foregroundColor(.black)
+            }
+            
+            
+            Button{
+                //
+            } label: {
+                Image(systemName: "bookmark")
+                    .modifier(NavbarIcon())
+                    .foregroundColor(.black)
+            }
+
+           
+            Button{
+                //
+            } label: {
+                Image("settings")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.black)
+            }
+
+
         }
     }
 }
