@@ -35,7 +35,6 @@ struct ListCardView: View {
                         .edgesIgnoringSafeArea(.top)
                         .listStyle(GroupedListStyle())
                         .edgesIgnoringSafeArea(.bottom)
-                        .navigationBarHidden(true)
                     }
                 
             } // VStack
