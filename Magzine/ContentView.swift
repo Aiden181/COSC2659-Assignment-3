@@ -9,9 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color("White")
+        TabView{
+            ListCardView()
+            .tabItem {
+                Image(systemName: "house")
+
+            }
+
+            SearchView()
+                .tabItem {
+                Image(systemName: "magnifyingglass")
+                        .modifier(NavbarIcon())
+
+                }
+            
+            BookmarkView()
+                .tabItem {
+                    Image(systemName: "bookmark")
+                        .modifier(NavbarIcon())
+                }
+            
+            SettingView()
+                .tabItem {
+                    Image(systemName: "gearshape")
+
+              }
+            
+            
+
         }
+        .accentColor(.black)
     }
 }
 

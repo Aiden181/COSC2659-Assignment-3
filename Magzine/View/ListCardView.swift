@@ -14,9 +14,7 @@ struct ListCardView: View {
             VStack{
                 Spacer()
                 
-                Text("News 24")
-                    .font(.system(size: 24, weight: .bold, design: .rounded))
-                    
+                Image("news24")
                 ListCategoryView()
                     NavigationView{
                         List(0..<10) { item in
@@ -28,7 +26,7 @@ struct ListCardView: View {
                             }
                         }
                         .onAppear(perform: {
-                                UITableView.appearance().contentInset.top = -35
+                                UITableView.appearance().contentInset.top = -15
                             })
 //                        .offset(y: 110)
                         .edgesIgnoringSafeArea(.top)
@@ -37,7 +35,6 @@ struct ListCardView: View {
                         .navigationBarHidden(true)
                     }
                 
-                    BottomNavbar()
             } // VStack
         } // ZStack
 
