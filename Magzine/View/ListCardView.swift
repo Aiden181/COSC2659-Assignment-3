@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ListCardView: View {
+    @StateObject private var viewModel = HomeViewModel()
+
     var body: some View {
         ZStack {
         Color("White")
@@ -15,7 +17,7 @@ struct ListCardView: View {
                 Spacer()
                 
                 Image("news24")
-                ListCategoryView()
+                ListCategoryView(selection: $viewModel.selection)
                     NavigationView{
                         List(0..<10) { item in
                             NavigationLink{
@@ -23,6 +25,7 @@ struct ListCardView: View {
                             } label: {
                                 CardView()
                                     .frame( maxWidth: .infinity)
+                                    .offset(y:-12) //dont touch the offset plz (Duong)
                             }
                         }
                         .onAppear(perform: {

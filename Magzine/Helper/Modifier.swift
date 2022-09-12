@@ -60,7 +60,7 @@ struct CategoryText: ViewModifier{
 //MARK: - Categories List Button Style
 struct CategoryBTN: ViewModifier{
     func body(content: Content) -> some View {
-        content.frame(width: 80, height: 28, alignment: .center)
+        content.frame(width: 105, height: 28, alignment: .center)
     }
 }
 
