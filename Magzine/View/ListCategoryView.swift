@@ -16,7 +16,8 @@ struct ListCategoryView: View {
                 }
             }
         }
-        .frame(maxHeight: 100)
+//        .frame(maxHeight: 100)
+        .frame(maxHeight: 50)
         .padding(.horizontal, 16)
     }
 }

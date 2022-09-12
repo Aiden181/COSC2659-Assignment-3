@@ -12,6 +12,11 @@ struct ListCardView: View {
         ZStack {
         Color("White")
             VStack{
+                Spacer()
+                
+                Text("News 24")
+                    .font(.system(size: 24, weight: .bold, design: .rounded))
+                    
                 ListCategoryView()
                     NavigationView{
                         List(0..<10) { item in
@@ -25,7 +30,7 @@ struct ListCardView: View {
                         .onAppear(perform: {
                                 UITableView.appearance().contentInset.top = -35
                             })
-                        .offset(y: 110)
+//                        .offset(y: 110)
                         .edgesIgnoringSafeArea(.top)
                         .listStyle(GroupedListStyle())
                         .edgesIgnoringSafeArea(.bottom)
@@ -33,8 +38,8 @@ struct ListCardView: View {
                     }
                 
                     BottomNavbar()
-            }
-        }//VStack
+            } // VStack
+        } // ZStack
 
             
         
