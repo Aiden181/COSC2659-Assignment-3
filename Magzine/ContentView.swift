@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         TabView{
-            ListCardView()
+            HomeView()
             .tabItem {
                 Image(systemName: "house")
 

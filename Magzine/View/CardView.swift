@@ -28,7 +28,12 @@ struct CardView: View {
                             .modifier(CardAuthorText())
                     }
                     Spacer()
-                    Image(systemName: "ellipsis")
+                    Button{
+                        //
+                    } label: {
+                        Image(systemName: "ellipsis")
+                            .foregroundColor(.black)
+                    }
                 }
             } //VStack
         } //HStack #1
