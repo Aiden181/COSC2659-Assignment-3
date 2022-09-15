@@ -21,28 +21,30 @@ struct TopNavbar: View {
                     
                 }) {
                     Image(systemName: "chevron.left")
-                        .foregroundColor(.black)
+                    Text("Home")
                 }
+                .foregroundColor(.black)
+
                 .navigationBarHidden(true)
                 
                 Spacer()
                 
-                HStack(spacing: 22){
-                    Button{
-                        //
-                    } label: {
-                        Image(systemName: "bookmark")
-                            .foregroundColor(.black)
-
-                    }
-                    Button{
-                        //
-                    } label: {
-                        Image(systemName: "square.and.arrow.up")
-                            .foregroundColor(.black)
-
-                    }
-                }
+//                HStack(spacing: 22){
+//                    Button{
+//                        //
+//                    } label: {
+//                        Image(systemName: "bookmark")
+//                            .foregroundColor(.black)
+//
+//                    }
+//                    Button{
+//                        //
+//                    } label: {
+//                        Image(systemName: "square.and.arrow.up")
+//                            .foregroundColor(.black)
+//
+//                    }
+//                }
             }
             .padding(.horizontal, 16)
         }

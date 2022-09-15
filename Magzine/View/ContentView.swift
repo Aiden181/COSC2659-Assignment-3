@@ -23,9 +23,15 @@ struct ContentView: View {
 
                 }
             
-            BookmarkView()
+//            BookmarkView()
+//                .tabItem {
+//                    Image(systemName: "bookmark")
+//                        .modifier(NavbarIcon())
+//                }
+            
+            SettingView()
                 .tabItem {
-                    Image(systemName: "bookmark")
+                    Image(systemName: "gear")
                         .modifier(NavbarIcon())
                 }
 

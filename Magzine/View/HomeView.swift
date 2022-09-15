@@ -42,11 +42,12 @@ struct HomeView: View {
                             }
                             .padding(.bottom, 10)
                             .onAppear(perform: {
-                                    UITableView.appearance().contentInset.top = -80
+                                UITableView.appearance().contentInset.bottom = 50
+
                                 })
 //                            .offset(y: )
                             .edgesIgnoringSafeArea(.top)
-                            .listStyle(GroupedListStyle())
+                            .listStyle(InsetListStyle())
                             .edgesIgnoringSafeArea(.bottom)
                             .navigationBarHidden(true)
                         }
@@ -71,3 +72,5 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+

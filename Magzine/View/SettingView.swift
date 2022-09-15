@@ -9,7 +9,63 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color("White")
+            VStack{
+                NavigationView {
+                    VStack (alignment: .leading){
+                        Text("Setting")
+                            .offset(x: 20)
+                            .modifier(TabviewTitle())
+                        List(0..<1){ item in
+                            NavigationLink {
+                                //
+                            } label: {
+                                HStack{
+                                    Image(systemName: "person.fill")
+                                    Text("View Account")
+                                }
+                            }
+                            NavigationLink {
+                                TermsView()
+                            } label: {
+                                HStack{
+                                    Image(systemName: "questionmark.app")
+                                    Text("Terms & Condition")
+                                }
+                            }
+                            NavigationLink {
+                                AboutView()
+                            } label: {
+                                HStack{
+                                    Image(systemName: "lock.square")
+                                    Text("Privacy Policy")
+                                }
+                            }
+
+                            Button {
+                                //
+                            } label: {
+                                HStack{
+                                    Image(systemName: "arrow.right.square")
+                                        .foregroundColor(Color("Black"))
+                                    Text("Logout")
+                                        .foregroundColor(Color("Black"))
+                                }
+                            }
+
+                            
+                        }
+                        .onAppear(perform: {
+                                UITableView.appearance().contentInset.top = 10
+                            })
+                        .listStyle(InsetListStyle())
+                        .navigationBarHidden(true)
+                    }
+                }
+            }
+        }
+        
     }
 }
 

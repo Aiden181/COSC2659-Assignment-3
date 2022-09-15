@@ -96,3 +96,10 @@ struct AuthorAvatar: ViewModifier{
             .clipShape(Circle())
     }
 }
+
+//MARK: - TabViewTitle Content Style
+struct TabviewTitle: ViewModifier{
+    func body(content: Content) -> some View {
+        content.font(.custom(FontManager.Poppins.semibold, size: 20))
+    }
+}
