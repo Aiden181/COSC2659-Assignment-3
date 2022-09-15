@@ -18,16 +18,17 @@ struct HomeView: View {
                     NavigationView{
                         VStack{
                             HStack{
-                                Image("news24")
-                                
-                                Button(action:{viewModel.openNotification = true}){
-                                    Image(systemName: "bell")
-                                        .foregroundColor(.black)
-                                }
+                                Image("Magzine")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 80)
+                                Image(systemName: "newspaper")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 30)
                             }
                                 VStack{
                                     ListCategoryView(selection: $viewModel.selection)
-
                                 }
                                 
                             List(0..<10) { item in
@@ -39,8 +40,9 @@ struct HomeView: View {
                                         .offset(y:-11) //dont touch the offset plz (Duong)
                                 }
                             }
+                            .padding(.bottom, 10)
                             .onAppear(perform: {
-                                    UITableView.appearance().contentInset.top = -40
+                                    UITableView.appearance().contentInset.top = -80
                                 })
 //                            .offset(y: )
                             .edgesIgnoringSafeArea(.top)

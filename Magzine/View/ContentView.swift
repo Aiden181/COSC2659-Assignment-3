@@ -13,8 +13,7 @@ struct ContentView: View {
         TabView{
             HomeView()
             .tabItem {
-                Image(systemName: "house")
-
+                Image(systemName: "house.fill")
             }
 
             SearchView()
@@ -29,17 +28,14 @@ struct ContentView: View {
                     Image(systemName: "bookmark")
                         .modifier(NavbarIcon())
                 }
-            
-            SettingView()
-                .tabItem {
-                    Image(systemName: "gearshape")
 
-              }
             
-            
-
         }
         .accentColor(.black)
+        .onAppear() {
+            UITabBar.appearance().barTintColor = .white
+        }
+//        .frame(height: )
     }
 }
 

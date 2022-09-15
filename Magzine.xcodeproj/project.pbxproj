@@ -104,7 +104,6 @@
 				765BB9DC28C6F895003434C3 /* Helper */,
 				765BB9DA28C6F888003434C3 /* View */,
 				765BB9CC28C6F85D003434C3 /* MagzineApp.swift */,
-				765BB9CE28C6F85D003434C3 /* ContentView.swift */,
 				765BB9D028C6F85F003434C3 /* Assets.xcassets */,
 				765BB9D228C6F85F003434C3 /* Preview Content */,
 			);
@@ -122,6 +121,7 @@
 		765BB9DA28C6F888003434C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				765BB9CE28C6F85D003434C3 /* ContentView.swift */,
 				765BB9E528C6FF9E003434C3 /* CardView.swift */,
 				765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */,
 				765BB9F728C90B21003434C3 /* CategoryButton.swift */,
