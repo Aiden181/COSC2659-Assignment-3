@@ -17,13 +17,13 @@ struct BookmarkView: View {
                 NavigationView{
                     VStack{
                         VStack{
-                            ListCategoryView(selection: $viewModel.selection)
+                            //ListCategoryView(selection: $viewModel.selection)
                         }
 
 
                         List(0..<10) { item in
                             NavigationLink{
-                                ArticleView()
+                               // ArticleView()
                             } label: {
                                 CardView()
                                     .frame( maxWidth: .infinity)
@@ -56,3 +56,4 @@ struct BookmarkView_Previews: PreviewProvider {
         BookmarkView()
     }
 }
+

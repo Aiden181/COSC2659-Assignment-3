@@ -21,33 +21,29 @@ struct NewsModel: Decodable{
 
 
 enum Categories: String, Decodable, CaseIterable{
-    
-    case forYou = "for-you"
-    case top = "top"
-    case world = "world"
-    case politics = "politics"
-    case entertainment = "entertainment"
     case general = "general"
-    case health = "health"
-    case science = "science"
+    case entertainment = "entertainment"
+    case covid = "covid-19"
+    case newest = "newest"
+    case politics = "politics"
     case sports = "sports"
     case technology = "technology"
+    case world = "world"
 
     var name: String {
         switch self {
-        case .forYou: return "For You"
-        case .top: return "Top"
-        case .world: return "World"
-        case .politics: return "Politics"
-        case .entertainment: return "Entertainment"
         case .general: return "General"
-        case .health: return "Health"
-        case .science: return "Science"
-        case .sports: return "Sports"
+        case .entertainment: return "Entertainment"
+        case .covid: return "Covid-19"
+        case .newest: return "Newest"
+        case .politics: return "Politic"
+        case .sports: return "Sport"
         case .technology: return "Technology"
+        case .world: return "World"
       
         }
     }
 
 
 }
+
