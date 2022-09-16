@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ListCategoryView: View {
     @Binding var selection: Int
+    @Binding var articles:[ArticleItem]
+    var apiURL: String
+    @State private var apiURLCate = ""
     private let categories = Categories.allCases
+    @Binding var isChanged:Bool
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
@@ -30,10 +34,41 @@ struct ListCategoryView: View {
                                 .modifier(CategoryText())
                                 .foregroundColor(.white)
                         }
-                }
+                    }
                     .padding(.horizontal, 8)
                     .onTapGesture {
-                        withAnimation(.easeInOut(duration: 0.3)) { selection = index }
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            selection = index
+                            if(selection > 0){
+                                self.apiURLCate = apiURL + "?category=\(categories[index].name)"
+                            }
+                            else{
+                                self.apiURLCate = apiURL
+                            }
+                            print("CRAWL API: " + apiURLCate)
+                            articles.removeAll();
+                            guard let url = URL(string: apiURLCate) else{
+                                return
+                            }
+                            let task = URLSession.shared.dataTask(with: url){data,_,error
+                                in
+                                guard let data = data, error == nil else{
+                                                return
+                                           }
+                        
+                                           do{
+                                                let articles = try JSONDecoder().decode([ArticleItem].self, from: data)
+                                               DispatchQueue.main.async {
+                                                   self.articles = articles
+                                                }
+                                            }
+                                            catch{
+                                            print("ERROR: \(error)")
+                                            }
+                            }
+                            task.resume()
+                            
+                        }
                     }
             }
         }
@@ -50,4 +85,5 @@ struct ListCategoryView: View {
 //            .previewLayout(.sizeThatFits)
 //        }
 //    }
+
 

@@ -37,6 +37,9 @@
 		765BBA0028C9CF3E003434C3 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BB9FF28C9CF3E003434C3 /* ArticleView.swift */; };
 		765BBA0228C9D369003434C3 /* BottomNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BBA0128C9D369003434C3 /* BottomNavbar.swift */; };
 		765BBA0428C9DA48003434C3 /* TopNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BBA0328C9DA48003434C3 /* TopNavbar.swift */; };
+		D164217528D467CC00B8FD18 /* ArticleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D164217428D467CC00B8FD18 /* ArticleItem.swift */; };
+		D164217728D4696000B8FD18 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D164217628D4696000B8FD18 /* ViewModel.swift */; };
+		D164217928D46A3400B8FD18 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D164217828D46A3400B8FD18 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		765BB9FF28C9CF3E003434C3 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		765BBA0128C9D369003434C3 /* BottomNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavbar.swift; sourceTree = "<group>"; };
 		765BBA0328C9DA48003434C3 /* TopNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavbar.swift; sourceTree = "<group>"; };
+		D164217428D467CC00B8FD18 /* ArticleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleItem.swift; sourceTree = "<group>"; };
+		D164217628D4696000B8FD18 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D164217828D46A3400B8FD18 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,8 @@
 				3639DE9028CB2F6200B09327 /* NewsModel.swift */,
 				366B23D428CF549A009EC08C /* HomeViewModel.swift */,
 				3610AAB028D1F2DA00EE9020 /* Sources.swift */,
+				D164217428D467CC00B8FD18 /* ArticleItem.swift */,
+				D164217628D4696000B8FD18 /* ViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 				7633411B28CCDB1B00E6E50B /* SearchView.swift */,
 				7633411D28CCDB2300E6E50B /* SettingView.swift */,
 				430BEB9C28D4418B00998DA0 /* RegisterView.swift */,
+				D164217828D46A3400B8FD18 /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,9 +280,11 @@
 				765BBA0428C9DA48003434C3 /* TopNavbar.swift in Sources */,
 				430BEB9D28D4418B00998DA0 /* RegisterView.swift in Sources */,
 				3687EFC628D33A3E005C6201 /* ViewAccountView.swift in Sources */,
+				D164217728D4696000B8FD18 /* ViewModel.swift in Sources */,
 				366B23D528CF549A009EC08C /* HomeViewModel.swift in Sources */,
 				3687EFC228D33A26005C6201 /* AboutView.swift in Sources */,
 				765BBA0228C9D369003434C3 /* BottomNavbar.swift in Sources */,
+				D164217928D46A3400B8FD18 /* WebView.swift in Sources */,
 				765BB9F828C90B21003434C3 /* CategoryButton.swift in Sources */,
 				7633411E28CCDB2300E6E50B /* SettingView.swift in Sources */,
 				765BB9CF28C6F85D003434C3 /* ContentView.swift in Sources */,
@@ -285,6 +296,7 @@
 				765BB9CD28C6F85D003434C3 /* MagzineApp.swift in Sources */,
 				765BB9F028C8FED1003434C3 /* ListCategoryView.swift in Sources */,
 				765BB9EA28C8DD36003434C3 /* Modifier.swift in Sources */,
+				D164217528D467CC00B8FD18 /* ArticleItem.swift in Sources */,
 				3687EFC428D33A32005C6201 /* TermsView.swift in Sources */,
 				765BBA0028C9CF3E003434C3 /* ArticleView.swift in Sources */,
 			);

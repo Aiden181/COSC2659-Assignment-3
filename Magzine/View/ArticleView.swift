@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct ArticleView: View {
+    //@StateObject  private var cardViewModel = ViewModel()
+    var article:ArticleItem
     var body: some View {
         
         VStack{
@@ -15,55 +18,23 @@ struct ArticleView: View {
                 .padding(.top, 22)
                 .padding(.bottom, 8)
             NavigationView {
-                ScrollView(.vertical, showsIndicators: true, content: {
-            ZStack{
-                VStack{
-                    Image("image")
-                        .resizable()
-                        .scaledToFit()
-                        .padding(.bottom, 15)
-                    VStack {
-                        Text("Monarch population soars 4,900 percent since last year in thrilling 2021 western migration")
-                            .modifier(ArticleTitleStyle())
-                        HStack{
-                            Image("avatar")
-                                .resizable()
-                                .modifier(AuthorAvatar())
-                            Text("Elon Musk")
-                                .modifier(CardAuthorText())
-                            Spacer()
-                            Text("1m ago")
-                                .modifier(CardAuthorText())
-                                
-                        }//HStack
-                        .frame(maxWidth: 370)
-                        ScrollView(showsIndicators: false) {
-                            Text("When just 200 Western monarch butterflies arrived in the Pismo Beach Butterfly Grove from their northerly migration last year, park rangers feared the treasured insect would soon be gone forever. \n\nThis year, however, volunteers tallied their numbers at over 100,000, a spectacular swarm of hope that traveled down from as far north as Canada to the spend the winter on the California coast. \n\nIt’s expected that the monarch butterfly will be placed on the Endangered Species List soon, due to declines in both western and eastern monarch butterfly numbers. Genetically indistinguishable, they are separate merely for the fact that monarchs living and migrating east of the Rockies overwinter in Mexico, while those on the western side of the Rockies overwinter along California’s ")
-        //                        .lineLimit(13)
-                                .modifier(ArticleContentStyle())
-                                .frame(maxWidth: 370)
-                                .lineSpacing(5)
-                        }
-                        .frame(maxHeight: 310)
-                                }//VStack 2
-                                .padding(.horizontal, 16)
-                                .frame(maxWidth: .infinity)
-                            }// VStack #1
-                
-                        }// ZStack
-                
-                })
-                .edgesIgnoringSafeArea(.top)
-                .navigationBarHidden(true)
+        
+            
+            WebView(url: URL(string: article.directUrl)!)
+                .frame(height: 900.0)
+                .cornerRadius(10)
+                .shadow(color: .black.opacity(0.3), radius: 20.0, x: 5, y: 5)
+                       
             }
         }
         
 
     }
 }
+//
+//struct ArticleView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ArticleView()
+//    }
+//}
 
-struct ArticleView_Previews: PreviewProvider {
-    static var previews: some View {
-        ArticleView()
-    }
-}
