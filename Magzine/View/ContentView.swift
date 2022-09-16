@@ -33,12 +33,7 @@ struct ContentView: View {
 
                 }
             
-//            BookmarkView()
-//                .tabItem {
-//                    Image(systemName: "bookmark")
-//                        .modifier(NavbarIcon())
-//                }
-            
+            // MARK: - SETTING VIEW
             ZStack{
                 Color("White")
                 VStack{
@@ -50,6 +45,7 @@ struct ContentView: View {
                             List(0..<1){ item in
                                 NavigationLink {
                                     //
+                                    ViewAccountView()
                                 } label: {
                                     HStack{
                                         Image(systemName: "person.fill")

@@ -23,11 +23,14 @@ struct HomeView: View {
             NavigationView{
             VStack{
                 HStack{
-                    Image("news24")
-                    Button(action:{viewModel.openNotification = true}){
-                    Image(systemName: "bell")
-                        .foregroundColor(.black)
-                    }
+                    Image("Magzine")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 80)
+                    Image(systemName: "newspaper")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
                 }
                 VStack{
                     ListCategoryView(selection: $viewModel.selection,articles: $cardViewModel.articles,apiURL: apiURL,isChanged: $isChanged)
@@ -41,14 +44,16 @@ struct HomeView: View {
                         NavigationLink{
                             ArticleView(article: article)
                         } label: {
-                            HStack(alignment: .top){
+                            HStack{
                                 URLImage(urlString: article.imgSrc)
+                                    .padding(.bottom)
                                 VStack(alignment: .leading, spacing: 15){
                                     Text(article.title).modifier(CardTitleText())
                                     HStack{
-                                        HStack(spacing: 15){
+                                        HStack(spacing: 8){
                                             Text(article.category)
                                                 .modifier(CardCategoryText())
+                                            Spacer()
                                             Image(systemName: "circle.fill")
                                                 .resizable()
                                                 .modifier(TimeDot())
@@ -56,12 +61,8 @@ struct HomeView: View {
                                                 .modifier(CardAuthorText())
                                         }
                                         Spacer()
-                                        Button{
-                                            //
-                                        } label: {
-                                            Image(systemName: "ellipsis")
-                                                .foregroundColor(.black)
-                                        }
+
+
                                     }
                                 } //VStack
                             } //HStack #1
@@ -70,25 +71,26 @@ struct HomeView: View {
 //
 //
 //                        })
-                            .padding(.bottom, 30)
-                            .padding(.top, 20)
+                            .padding(.bottom, 10)
+                            .padding(.top, 10)
                             .edgesIgnoringSafeArea(.top)
                                 .frame( maxWidth: .infinity)
-                                .offset(y:-11) //dont touch the offset plz (Duong)
+//                                .offset(y:-30)
                         }
                     }.onAppear(){
-                        UITableView.appearance().contentInset.top = -40
                         cardViewModel.parseJSON(string: apiURL)
+                        UITableView.appearance().contentInset.bottom = 80
+
                     }
-//                            .offset(y: )
+//                            .offset(y: 100)
                     .edgesIgnoringSafeArea(.top)
-                    .listStyle(GroupedListStyle())
+                    .listStyle(InsetListStyle())
                     .edgesIgnoringSafeArea(.bottom)
                     .navigationBarHidden(true)
                         }
 
 
-                    }
+                    }//NavigationView
                 
             } // VStack
         } // ZStack

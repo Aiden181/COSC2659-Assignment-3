@@ -24,6 +24,8 @@ struct ArticleView: View {
                 .frame(height: 900.0)
                 .cornerRadius(10)
                 .shadow(color: .black.opacity(0.3), radius: 20.0, x: 5, y: 5)
+                .navigationBarHidden(true)
+
                        
             }
         }
