@@ -2,8 +2,16 @@
 //  FontManager.swift
 //  Magzine
 //
-//  Created by Aiden Ly on 06/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Khoi Viet Ly (s3753278)
+  Created  date: 06/09/2022
+  Last modified: 06/09/2022
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
 
 import Foundation
 struct FontManager{

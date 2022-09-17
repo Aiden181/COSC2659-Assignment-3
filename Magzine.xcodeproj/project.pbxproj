@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3610AAB128D1F2DA00EE9020 /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3610AAB028D1F2DA00EE9020 /* Sources.swift */; };
 		3639DE9128CB2F6200B09327 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639DE9028CB2F6200B09327 /* NewsModel.swift */; };
 		366B23D528CF549A009EC08C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B23D428CF549A009EC08C /* HomeViewModel.swift */; };
 		3687EFC228D33A26005C6201 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3687EFC128D33A26005C6201 /* AboutView.swift */; };
@@ -42,7 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3610AAB028D1F2DA00EE9020 /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
 		3639DE9028CB2F6200B09327 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		366B23D428CF549A009EC08C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3687EFC128D33A26005C6201 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			children = (
 				3639DE9028CB2F6200B09327 /* NewsModel.swift */,
 				366B23D428CF549A009EC08C /* HomeViewModel.swift */,
-				3610AAB028D1F2DA00EE9020 /* Sources.swift */,
 				D164217428D467CC00B8FD18 /* ArticleItem.swift */,
 				D164217628D4696000B8FD18 /* ViewModel.swift */,
 			);
@@ -295,7 +292,6 @@
 				765BB9E628C6FF9E003434C3 /* CardView.swift in Sources */,
 				765BB9E828C71115003434C3 /* FontManager.swift in Sources */,
 				7633411C28CCDB1B00E6E50B /* SearchView.swift in Sources */,
-				3610AAB128D1F2DA00EE9020 /* Sources.swift in Sources */,
 				3693877428D4AFA800C84D62 /* SearchBar.swift in Sources */,
 				765BB9CD28C6F85D003434C3 /* MagzineApp.swift in Sources */,
 				765BB9F028C8FED1003434C3 /* ListCategoryView.swift in Sources */,
