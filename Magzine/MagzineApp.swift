@@ -16,7 +16,7 @@ struct MagzineApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RegisterView()
+            SplashScreenView()
         }
     }
 }
