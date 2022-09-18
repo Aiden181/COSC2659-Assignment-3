@@ -87,6 +87,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36072E2F28D7142700E71C74 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				765BB9FD28C9BF45003434C3 /* HomeView.swift */,
+				765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */,
+				765BBA0328C9DA48003434C3 /* TopNavbar.swift */,
+				D164217828D46A3400B8FD18 /* WebView.swift */,
+				765BB9FF28C9CF3E003434C3 /* ArticleView.swift */,
+				765BB9E528C6FF9E003434C3 /* CardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		36072E3028D7145A00E71C74 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				36F41E3E28D5BB0E001E8C9A /* SplashScreenView.swift */,
+				430BEB9C28D4418B00998DA0 /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		36072E3128D7149700E71C74 /* BottomNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				765BB9CE28C6F85D003434C3 /* ContentView.swift */,
+			);
+			path = BottomNavBar;
+			sourceTree = "<group>";
+		};
 		3639DE8F28CB2F3300B09327 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,17 +191,11 @@
 		765BB9DA28C6F888003434C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				36072E3028D7145A00E71C74 /* Register */,
+				36072E3128D7149700E71C74 /* BottomNavBar */,
+				36072E2F28D7142700E71C74 /* Home */,
 				3693877228D4AF7800C84D62 /* Search */,
 				3687EFC028D33A06005C6201 /* Setting */,
-				765BB9CE28C6F85D003434C3 /* ContentView.swift */,
-				765BB9E528C6FF9E003434C3 /* CardView.swift */,
-				765BB9EF28C8FED1003434C3 /* ListCategoryView.swift */,
-				765BB9FD28C9BF45003434C3 /* HomeView.swift */,
-				765BB9FF28C9CF3E003434C3 /* ArticleView.swift */,
-				765BBA0328C9DA48003434C3 /* TopNavbar.swift */,
-				430BEB9C28D4418B00998DA0 /* RegisterView.swift */,
-				D164217828D46A3400B8FD18 /* WebView.swift */,
-				36F41E3E28D5BB0E001E8C9A /* SplashScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
